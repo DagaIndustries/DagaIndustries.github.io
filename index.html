@@ -9,6 +9,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="favicon.ico">
 <style>
+  @keyframes headerRotate{
+    0%{
+      transform: rotateY(0deg);
+    }
+    50%{
+      transform: rotateY(180deg);
+    }
+    100%{
+      transform: rotateY(360deg);
+    }
+  }
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
@@ -20,12 +31,15 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29ya3NwYWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+  background-image: url(https://www.dbswebsite.com/wp-content/uploads/gears.jpeg);
   min-height: 100%;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
+}
+.headerAnimation{
+  animation: headerRotate 3s linear 0s infinite;
 }
 </style>
 </head>
@@ -66,11 +80,11 @@ body, html {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small w3-text-black">Welcome to Daga Industries,</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-text-black">Welcome to Daga Industries,</span>
-    <span class="w3-large w3-hide-small w3-text-black" style="font-weight: bold;">Celebrating 50 Years of Excellence</span>
+<header class="bgimg-1 w3-display-container w3-grayscale-min " id="home">
+  <div class="w3-display-left w3-text-white " style="position: relative;top: 300px; padding:48px">
+    <span class="w3-jumbo w3-hide-small w3-text-black" style="background-color: white;">Welcome to Daga Industries,</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-text-black" style="background-color: white;">Welcome to Daga Industries,</span>
+    <div class="w3-xlarge w3-hide-small w3-text-black headerAnimation w3-show-inline-block" style="background-color: white;">Celebrating 50 Years of Excellence</div>
     <br>
     <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" style="position: relative; left:50px">Learn about us</a></p>
   </div>
@@ -261,7 +275,7 @@ body, html {
   </div>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bal. Disc and Valve">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2021/4/IB/BT/WV/29299434/cs-balancing-valve-500x500.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bal. Disc and Valve">
       <p class="w3-center">Bal. Disc and Valve</p>
     </div>
     <div class="w3-col l3 m6">
@@ -285,7 +299,7 @@ body, html {
       <p class="w3-center">DPC Roller</p>
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="DPC Bucket">
+      <img src="https://2.imimg.com/data2/QP/BP/MY-3986106/dpc-pan-500x500.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="DPC Bucket">
       <p class="w3-center">DPC Bucket</p>
     </div>
     <div class="w3-col l3 m6">
@@ -317,7 +331,7 @@ body, html {
   </div>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Slide Gates">
+      <img src="https://www.kwsmfg.com/wp-content/themes/va/images/KWS-Slide-Gate-bot.jpg" style="margin-top: 100px; width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Slide Gates">
       <p class="w3-center">Slide Gates</p>
     </div>
     <div class="w3-col l3 m6">
@@ -343,7 +357,7 @@ body, html {
       <p class="w3-center">Crusher Hammer</p>
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wooden Pattern">
+      <img src="https://5.imimg.com/data5/HY/UD/MY-45500139/wooden-casting-pattern-250x250.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wooden Pattern">
       <p class="w3-center">Wooden Pattern</p>
     </div>
     <div class="w3-col l3 m6">
@@ -353,11 +367,11 @@ body, html {
   </div>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Reclaimer Bucket">
+      <img src="https://www.uniquebuckets.com/wp-content/uploads/2020/03/WhatsApp-Image-2020-02-23-at-6.14.42-PM-min.jpeg" style="margin-top: 45px; width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Reclaimer Bucket">
       <p class="w3-center">Reclaimer Bucket</p>
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Reclaimer Stack/Wheel Assy.">
+      <img src="https://acri.cz/wp-content/uploads/2020/11/Bonatrans-dvojkol%C3%AD-1600x800.jpg" style="margin-top: 40px; width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Reclaimer Stack/Wheel Assy.">
       <p class="w3-center">Reclaimer Stack/Wheel Assy.</p>  
     </div>
     <div class="w3-col l3 m6">
@@ -401,11 +415,12 @@ body, html {
       <p class="w3-center">"V" Pulley</p>
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dodging Valve">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2020/10/TI/KG/QW/2058743/4dl-subplate-hydraulic-control-valve-500x500.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dodging Valve">
       <p class="w3-center">Dodging Valve</p>
     </div>
   </div>
 </div>
+
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
@@ -416,7 +431,7 @@ body, html {
 </div>
 <!-- Clientele Section -->
 <div class="w3-container" style="padding:128px 16px" id="pricing">
-  <h3 class="w3-center">OUR CLIENTELE</h3>
+  <h2 class="w3-center">OUR CLIENTELE</h2>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
       <img src="data:image/png;base64,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" style="margin-top: 45px; width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="JSW Cement">
@@ -557,8 +572,6 @@ body, html {
   </div>
 </div>
 
-
-  
 <!-- Man1 Section -->
 <div class="w3-container" style="padding:128px 16px" id="man1">
   <h2 class="w3-center">MANUFACTURING UNIT</h2>
@@ -597,12 +610,18 @@ body, html {
   </div>
 </div>
 
-<!-- Man2 Section -->
+  <!-- Man2 Section -->
 <div class="w3-container" style="padding:128px 16px" id="man2">
   <h3 class="w3-center">UPCOMING NEW MANUFACTURING UNIT</h3><br>
   <p class="w3-center w3-large">Our upcoming new Manufacturing Unit</p>
-  <br><br>
-  <p class="w3-center w3-large">COMING SOON...</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col m6">
+      <img src="D-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col m6">
+      <img src="D-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
   </div>
 
 <!-- Contact Section -->
@@ -645,12 +664,12 @@ body, html {
     <br>
     Certified Company</p>
   <br>
-  <p style="color: gray;"><i class="fa fa-diamond" style="margin-right: 5px;"></i>Designed by<br><a href="https://rishabhdaga.vercel.app/" class="w3-button w3-large w3-gray"><i class="fa fa-user"></i> Rishabh Daga</a>
+  <p style="color: gray;"><i class="fa fa-diamond" style="margin-right: 5px;"></i>Designed by<br><a href="https://rishabhdaga16.github.io/personal-website/" class="w3-button w3-large w3-gray"><i class="fa fa-user"></i> Rishabh Daga</a>
   </p>
   <br>
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </footer>
- 
+
 <script>
 // Modal Image Gallery
 function onClick(element) {
@@ -676,7 +695,8 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
-</script>
 
+
+</script>
 </body>
 </html>
